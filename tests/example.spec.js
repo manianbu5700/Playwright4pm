@@ -21,3 +21,7 @@ test('get started link', async ({ page }) => {
 test('Flipkart', async ({ page }) => {
   await page.goto('https://flipkart.com')
 })
+
+test('myntra', async ({ page }) => {
+  await page.goto('https://mynthra.com')
+})
