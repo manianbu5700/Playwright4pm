@@ -21,3 +21,8 @@ test('get started link', async ({ page }) => {
 test('amazoan', async ({ page }) => {
   await page.goto('https://amazon.in')
 })
+
+test('meesho', async ({ page }) => {
+  await page.goto('https://meesho.com')
+})
+
