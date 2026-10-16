@@ -1,0 +1,1629 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: example.spec.js >> meesho
+- Location: tests\example.spec.js:20:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://meesho.com/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "Meesho Logo" [ref=e8]
+      - textbox "Try Saree, Kurti or Search by Product Code" [ref=e15]
+      - generic [ref=e16]:
+        - generic [ref=e17]: Become a Supplier
+        - generic [ref=e20]: Investor Relations
+        - generic [ref=e23]: Profile
+        - link "Cart" [ref=e28] [cursor=pointer]:
+          - /url: /auth?redirect=https%3A%2F%2Fwww.meesho.com%2Fmcheckout%2Fcart&source=cart-icon&screen=HP
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - img "Smart Shopping" [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - generic [ref=e43]: Smart Shopping
+              - generic [ref=e44]: Trusted by Millions
+            - generic [ref=e45] [cursor=pointer]: Shop Now
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - img "7 Days Easy Return" [ref=e49]
+            - generic [ref=e50]: 7 Days Easy Return
+            - text: "|"
+          - generic [ref=e51]:
+            - img "Cash on Delivery" [ref=e52]
+            - generic [ref=e53]: Cash on Delivery
+            - text: "|"
+          - generic [ref=e54]:
+            - img "Lowest Prices" [ref=e55]
+            - generic [ref=e56]: Lowest Prices
+        - generic [ref=e58]:
+          - link "Ethnic Wear Ethnic Wear" [ref=e59] [cursor=pointer]:
+            - /url: /women-ethnic-wear/clp/1hjl
+            - img "Ethnic Wear" [ref=e60]
+            - generic [ref=e61]: Ethnic Wear
+          - link "Western Dresses Western Dresses" [ref=e62] [cursor=pointer]:
+            - /url: /western-dresses/clp/5S3C
+            - img "Western Dresses" [ref=e63]
+            - generic [ref=e64]: Western Dresses
+          - link "Menswear Menswear" [ref=e65] [cursor=pointer]:
+            - /url: /menswear/clp/40NO
+            - img "Menswear" [ref=e66]
+            - generic [ref=e67]: Menswear
+          - link "Footwear Footwear" [ref=e68] [cursor=pointer]:
+            - /url: /women-men-kids-footwear/clp/15mz
+            - img "Footwear" [ref=e69]
+            - generic [ref=e70]: Footwear
+          - link "Home Decor Home Decor" [ref=e71] [cursor=pointer]:
+            - /url: /home-decor-furnishings/clp/668x
+            - img "Home Decor" [ref=e72]
+            - generic [ref=e73]: Home Decor
+          - link "Beauty Beauty" [ref=e74] [cursor=pointer]:
+            - /url: /beauty/facet_collection/30983?title=Beauty
+            - img "Beauty" [ref=e75]
+            - generic [ref=e76]: Beauty
+          - link "Accessories Accessories" [ref=e77] [cursor=pointer]:
+            - /url: /accessories-bags/facet_collection/43174
+            - img "Accessories" [ref=e78]
+            - generic [ref=e79]: Accessories
+          - link "Grocery Grocery" [ref=e80] [cursor=pointer]:
+            - /url: /grocery/facet_collection/81087?title=Grocery
+            - img "Grocery" [ref=e81]
+            - generic [ref=e82]: Grocery
+        - generic [ref=e83]:
+          - link "Shop Now" [ref=e86] [cursor=pointer]:
+            - /url: /gold/clp/2R2G
+          - generic [ref=e87]:
+            - link [ref=e88] [cursor=pointer]:
+              - /url: /lehengas-gold/clp/3OZZ
+              - img "Lehenga" [ref=e90]
+            - link [ref=e91] [cursor=pointer]:
+              - /url: /menwear-gold/clp/3T58
+              - img "Menwear" [ref=e93]
+            - link [ref=e94] [cursor=pointer]:
+              - /url: /sarees/clp/44F1
+              - img "Sarees" [ref=e96]
+            - link [ref=e97] [cursor=pointer]:
+              - /url: /jewellery-gold/clp/3T56
+              - img "Jewellery" [ref=e99]
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]: Original Brands
+            - link "VIEW ALL" [ref=e105] [cursor=pointer]:
+              - /url: /mall/clp/2uoh
+          - generic [ref=e108]:
+            - link [ref=e109] [cursor=pointer]:
+              - /url: /personal-care/clp/3atx
+              - img "Original Brands" [ref=e111]
+            - link [ref=e112] [cursor=pointer]:
+              - /url: /electronics-mall/clp/3nhb
+              - img "Original Brands" [ref=e114]
+            - link [ref=e115] [cursor=pointer]:
+              - /url: /makeup/facet_collection/93811
+              - img "Original Brands" [ref=e117]
+            - link [ref=e118] [cursor=pointer]:
+              - /url: /men-perfumes/clp/2ykl
+              - img "Original Brands" [ref=e120]
+            - link [ref=e121] [cursor=pointer]:
+              - /url: /bags-mall/clp/1U23
+              - img "Original Brands" [ref=e123]
+            - link [ref=e124] [cursor=pointer]:
+              - /url: /mall-men-footwear/clp/3Z40
+              - img "Original Brands" [ref=e126]
+            - link [ref=e127] [cursor=pointer]:
+              - /url: /mall-books/clp/4204
+              - img "Original Brands" [ref=e129]
+          - button [ref=e130] [cursor=pointer]
+        - generic [ref=e135]:
+          - img "Popular Brands" [ref=e137]
+          - img "Popular Brands" [ref=e139]
+          - img "Popular Brands" [ref=e141]
+          - img "Popular Brands" [ref=e143]
+          - img "Popular Brands" [ref=e145]
+          - img "Popular Brands" [ref=e147]
+          - img "Popular Brands" [ref=e149]
+          - img "Popular Brands" [ref=e151]
+          - img "Popular Brands" [ref=e153]
+          - img "Popular Brands" [ref=e155]
+          - img "Popular Brands" [ref=e157]
+          - img "Popular Brands" [ref=e159]
+          - img "Popular Brands" [ref=e161]
+          - img "Popular Brands" [ref=e163]
+          - img "Popular Brands" [ref=e165]
+          - img "Popular Brands" [ref=e167]
+        - generic [ref=e168]:
+          - button "Download Now" [ref=e170] [cursor=pointer]
+          - generic [ref=e171]:
+            - link "✦ Trending Now Trending Now" [ref=e172] [cursor=pointer]:
+              - /url: /trending-now/clp/7fwa
+              - generic [ref=e173]:
+                - text: ✦
+                - img "Trending Now" [ref=e174]
+                - generic [ref=e175]: Trending Now
+            - link "✦ Budget Buys Budget Buys" [ref=e176] [cursor=pointer]:
+              - /url: /budget-buys/clp/7fwb
+              - generic [ref=e177]:
+                - text: ✦
+                - img "Budget Buys" [ref=e178]
+                - generic [ref=e179]: Budget Buys
+            - link "✦ Top Rated Picks Top Rated Picks" [ref=e180] [cursor=pointer]:
+              - /url: /top-rated/clp/7fwc
+              - generic [ref=e181]:
+                - text: ✦
+                - img "Top Rated Picks" [ref=e182]
+                - generic [ref=e183]: Top Rated Picks
+            - link "✦ Daily Essentials Daily Essentials" [ref=e184] [cursor=pointer]:
+              - /url: /daily-essentials/clp/7fw8
+              - generic [ref=e185]:
+                - text: ✦
+                - img "Daily Essentials" [ref=e186]
+                - generic [ref=e187]: Daily Essentials
+      - generic [ref=e191]:
+        - heading "Products For You" [level=4] [ref=e192]
+        - generic [ref=e193]:
+          - generic [ref=e195]:
+            - list [ref=e197] [cursor=pointer]:
+              - listitem [ref=e198]:
+                - generic [ref=e200]:
+                  - paragraph [ref=e201]: "Sort by :"
+                  - generic [ref=e202]: Relevance
+            - generic [ref=e205]:
+              - generic [ref=e206]: FILTERS
+              - generic [ref=e208]: 1000+ Products
+              - generic [ref=e211]:
+                - generic [ref=e212]: Category
+                - generic [ref=e221]: Gender
+                - generic [ref=e230]: Color
+                - generic [ref=e238]: Fabric
+                - generic [ref=e246]: Size
+                - generic [ref=e254]: Price
+                - generic [ref=e262]: Rating
+                - generic [ref=e270]: Occassion
+                - generic [ref=e278]: Combo
+                - generic [ref=e286]: Discount
+                - generic [ref=e294]: Meesho Gold
+                - generic [ref=e302]: Meesho Mall
+                - generic [ref=e310]: Fit/ Shape
+                - generic [ref=e318]: Country Of Origin
+                - generic [ref=e326]: Material
+                - generic [ref=e334]: Bottom Length
+                - generic [ref=e342]: Print Or Pattern Type
+                - generic [ref=e350]: Ornamentation
+                - generic [ref=e358]: Bottom Pattern Type
+                - generic [ref=e366]: Surface Styling
+                - generic [ref=e374]: Back Type
+                - generic [ref=e382]: Loom Type
+                - generic [ref=e390]: Compatible Models
+                - generic [ref=e398]: Waist Rise
+                - generic [ref=e406]: Bottom Type
+                - generic [ref=e414]: Dial Design
+                - generic [ref=e422]: Type
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - link "Bellavita perfumes for men 20ml Bellavita perfumes for men 20ml mallBadge ₹193 ₹748 74% off 4.3 Star 259436 Reviews" [ref=e435] [cursor=pointer]:
+                - /url: /bella-vita-luxury-ceo-man-20-ml-white-oud-unisex-20-ml-perfume-gift-combo-pack-for-men-and-women-pack-of-2/p/6a8yet
+                - generic [ref=e436]:
+                  - img "Bellavita perfumes for men 20ml" [ref=e438]
+                  - generic [ref=e439]:
+                    - generic [ref=e440]:
+                      - generic [ref=e441]:
+                        - paragraph [ref=e442]: Bellavita perfumes for men 20ml
+                        - img "mallBadge" [ref=e443]
+                      - generic [ref=e444]:
+                        - heading "₹193" [level=5] [ref=e445]
+                        - paragraph [ref=e446]: ₹748
+                        - generic [ref=e447]: 74% off
+                    - generic [ref=e450]:
+                      - generic [ref=e451]:
+                        - generic [ref=e452]: "4.3"
+                        - img "Star" [ref=e453]
+                      - generic [ref=e454]: 259436 Reviews
+              - 'link "Wildplay Unisex Perfumes +2 More Offer clock icon 01h : 14m : 23s Wildplay Unisex Perfumes mallBadge ₹136 ₹399 66% off 3.9 Star 124824 Reviews" [ref=e456] [cursor=pointer]':
+                - /url: /wildplay-chocolate-30ml-perfume-spray-vanilla-fragrance/p/1op63p
+                - generic [ref=e457]:
+                  - generic [ref=e458]:
+                    - img "Wildplay Unisex Perfumes" [ref=e459]
+                    - generic [ref=e460]: +2 More
+                    - generic [ref=e463]:
+                      - img "Offer clock icon" [ref=e464]
+                      - generic [ref=e465]: "01h : 14m : 23s"
+                  - generic [ref=e466]:
+                    - generic [ref=e467]:
+                      - generic [ref=e468]:
+                        - paragraph [ref=e469]: Wildplay Unisex Perfumes
+                        - img "mallBadge" [ref=e470]
+                      - generic [ref=e471]:
+                        - heading "₹136" [level=5] [ref=e472]
+                        - paragraph [ref=e473]: ₹399
+                        - generic [ref=e474]: 66% off
+                    - generic [ref=e477]:
+                      - generic [ref=e478]:
+                        - generic [ref=e479]: "3.9"
+                        - img "Star" [ref=e480]
+                      - generic [ref=e481]: 124824 Reviews
+              - link "BRIT ACCENT Combo Pack Of 2|Depth Of Ocean-Canyon|Parfum|Long-Lasting|Specially Currated| Eau de Toilette - 100 ml (For Men & Women) BRIT ACCENT Combo Pack Of 2|Depth Of Ocean-Canyon|Parfum|Long-Lasting|Specially Currated| Eau de Toilette - 100 ml (For Men & Women) mallBadge ₹176 ₹798 78% off 4.0 Star 154723 Reviews" [ref=e483] [cursor=pointer]:
+                - /url: /brit-accent-combo-pack-of-2depth-of-ocean-canyonparfumlong-lastingspecially-currated-eau-de-toilette-100-ml-for-men-women/p/6qbi2c
+                - generic [ref=e484]:
+                  - img "BRIT ACCENT Combo Pack Of 2|Depth Of Ocean-Canyon|Parfum|Long-Lasting|Specially Currated| Eau de Toilette - 100 ml (For Men & Women)" [ref=e486]
+                  - generic [ref=e487]:
+                    - generic [ref=e488]:
+                      - generic [ref=e489]:
+                        - paragraph [ref=e490]: BRIT ACCENT Combo Pack Of 2|Depth Of Ocean-Canyon|Parfum|Long-Lasting|Specially Currated| Eau de Toilette - 100 ml (For Men & Women)
+                        - img "mallBadge" [ref=e491]
+                      - generic [ref=e492]:
+                        - heading "₹176" [level=5] [ref=e493]
+                        - paragraph [ref=e494]: ₹798
+                        - generic [ref=e495]: 78% off
+                    - generic [ref=e498]:
+                      - generic [ref=e499]:
+                        - generic [ref=e500]: "4.0"
+                        - img "Star" [ref=e501]
+                      - generic [ref=e502]: 154723 Reviews
+              - 'link "Menstrual/Sanitary pads Offer clock icon 01h : 14m : 23s Menstrual/Sanitary pads ₹141 ₹156 10% off 4.2 Star 6429 Reviews Meesho Trusted" [ref=e504] [cursor=pointer]':
+                - /url: /sarah-sanitary-pad-size-xlpacket-of-40280mmsize-xlpacket-of-40280mm/p/8677dk
+                - generic [ref=e505]:
+                  - generic [ref=e506]:
+                    - img "Menstrual/Sanitary pads" [ref=e507]
+                    - generic [ref=e509]:
+                      - img "Offer clock icon" [ref=e510]
+                      - generic [ref=e511]: "01h : 14m : 23s"
+                  - generic [ref=e512]:
+                    - generic [ref=e513]:
+                      - paragraph [ref=e515]: Menstrual/Sanitary pads
+                      - generic [ref=e516]:
+                        - heading "₹141" [level=5] [ref=e517]
+                        - paragraph [ref=e518]: ₹156
+                        - generic [ref=e519]: 10% off
+                    - generic [ref=e521]:
+                      - generic [ref=e522]:
+                        - generic [ref=e523]:
+                          - generic [ref=e524]: "4.2"
+                          - img "Star" [ref=e525]
+                        - generic [ref=e526]: 6429 Reviews
+                      - img "Meesho Trusted" [ref=e527]
+            - generic [ref=e528]:
+              - link "Pampers New Baby Daipers Pampers New Baby Daipers mallBadge ₹437 ₹609 28% off 4.3 Star 110990 Reviews" [ref=e530] [cursor=pointer]:
+                - /url: /pampers-happy-sleep-pant-style-baby-diapers-small-s-60-count/p/9ceit3
+                - generic [ref=e531]:
+                  - img "Pampers New Baby Daipers" [ref=e533]
+                  - generic [ref=e534]:
+                    - generic [ref=e535]:
+                      - generic [ref=e536]:
+                        - paragraph [ref=e537]: Pampers New Baby Daipers
+                        - img "mallBadge" [ref=e538]
+                      - generic [ref=e539]:
+                        - heading "₹437" [level=5] [ref=e540]
+                        - paragraph [ref=e541]: ₹609
+                        - generic [ref=e542]: 28% off
+                    - generic [ref=e545]:
+                      - generic [ref=e546]:
+                        - generic [ref=e547]: "4.3"
+                        - img "Star" [ref=e548]
+                      - generic [ref=e549]: 110990 Reviews
+              - link "Ghar Soaps Magic De-Tan Face wash I With Sandalwood ,Saffron & Glutathione | Tan Removal, Brightening and Glowing Skin I For All Skin Type Skin I For Man & Women | 100ml Ghar Soaps Magic De-Tan Face wash I With Sandalwood ,Saffron & Glutathione | Tan Removal, Brightening and Glowing Skin I For All Skin Type Skin I For Man & Women | 100ml mallBadge ₹251 ₹499 50% off 4.2 Star 86928 Reviews" [ref=e551] [cursor=pointer]:
+                - /url: /ghar-soaps-magic-de-tan-face-wash-i-with-sandalwood-saffron-glutathione-tan-removal-brightening-and-glowing-skin-i-for-all-skin-type-skin-i-for-man-women-100ml/p/76ifau
+                - generic [ref=e552]:
+                  - img "Ghar Soaps Magic De-Tan Face wash I With Sandalwood ,Saffron & Glutathione | Tan Removal, Brightening and Glowing Skin I For All Skin Type Skin I For Man & Women | 100ml" [ref=e554]
+                  - generic [ref=e555]:
+                    - generic [ref=e556]:
+                      - generic [ref=e557]:
+                        - paragraph [ref=e558]: Ghar Soaps Magic De-Tan Face wash I With Sandalwood ,Saffron & Glutathione | Tan Removal, Brightening and Glowing Skin I For All Skin Type Skin I For Man & Women | 100ml
+                        - img "mallBadge" [ref=e559]
+                      - generic [ref=e560]:
+                        - heading "₹251" [level=5] [ref=e561]
+                        - paragraph [ref=e562]: ₹499
+                        - generic [ref=e563]: 50% off
+                    - generic [ref=e566]:
+                      - generic [ref=e567]:
+                        - generic [ref=e568]: "4.2"
+                        - img "Star" [ref=e569]
+                      - generic [ref=e570]: 86928 Reviews
+              - link "New Collections Of Facewash & Scrubs New Collections Of Facewash & Scrubs ₹142 3.9 Star 914 Reviews" [ref=e572] [cursor=pointer]:
+                - /url: /magic-de-tan-face-wash-with-saffron-glutathione-tan-re/p/i6iuxq
+                - generic [ref=e573]:
+                  - img "New Collections Of Facewash & Scrubs" [ref=e575]
+                  - generic [ref=e576]:
+                    - generic [ref=e577]:
+                      - paragraph [ref=e579]: New Collections Of Facewash & Scrubs
+                      - heading "₹142" [level=5] [ref=e581]
+                    - generic [ref=e584]:
+                      - generic [ref=e585]:
+                        - generic [ref=e586]: "3.9"
+                        - img "Star" [ref=e587]
+                      - generic [ref=e588]: 914 Reviews
+              - link "Proskire Ultimate Hair Growth Oil | Reduces Hair Fall & Promotes Hair Growth | Lightweight | 100 ml +2 More Proskire Ultimate Hair Growth Oil | Reduces Hair Fall & Promotes Hair Growth | Lightweight | 100 ml mallBadge ₹377 ₹449 16% off 4.0 Star 7335 Reviews" [ref=e590] [cursor=pointer]:
+                - /url: /proskire-ultimate-hair-growth-oil-reduces-hair-fall-promotes-hair-growth-lightweight-100-ml/p/bmmqi5
+                - generic [ref=e591]:
+                  - generic [ref=e592]:
+                    - img "Proskire Ultimate Hair Growth Oil | Reduces Hair Fall & Promotes Hair Growth | Lightweight | 100 ml" [ref=e593]
+                    - generic [ref=e594]: +2 More
+                  - generic [ref=e596]:
+                    - generic [ref=e597]:
+                      - generic [ref=e598]:
+                        - paragraph [ref=e599]: Proskire Ultimate Hair Growth Oil | Reduces Hair Fall & Promotes Hair Growth | Lightweight | 100 ml
+                        - img "mallBadge" [ref=e600]
+                      - generic [ref=e601]:
+                        - heading "₹377" [level=5] [ref=e602]
+                        - paragraph [ref=e603]: ₹449
+                        - generic [ref=e604]: 16% off
+                    - generic [ref=e607]:
+                      - generic [ref=e608]:
+                        - generic [ref=e609]: "4.0"
+                        - img "Star" [ref=e610]
+                      - generic [ref=e611]: 7335 Reviews
+            - generic [ref=e612]:
+              - link "Magic Face Wash | With Sandalwood, Saffron & Glutathione | Tan Removal, Skin Brightening & Radiant Glow | (Pack of 1) (100 g) Magic Face Wash | With Sandalwood, Saffron & Glutathione | Tan Removal, Skin Brightening & Radiant Glow | (Pack of 1) (100 g) mallBadge ₹267 ₹333 20% off 4.1 Star 98923 Reviews" [ref=e614] [cursor=pointer]:
+                - /url: /magic-face-wash-with-sandalwood-saffron-glutathione-tan-removal-skin-brightening-radiant-glow-pack-of-1-100-g/p/9qq4qh
+                - generic [ref=e615]:
+                  - img "Magic Face Wash | With Sandalwood, Saffron & Glutathione | Tan Removal, Skin Brightening & Radiant Glow | (Pack of 1) (100 g)" [ref=e617]
+                  - generic [ref=e618]:
+                    - generic [ref=e619]:
+                      - generic [ref=e620]:
+                        - paragraph [ref=e621]: Magic Face Wash | With Sandalwood, Saffron & Glutathione | Tan Removal, Skin Brightening & Radiant Glow | (Pack of 1) (100 g)
+                        - img "mallBadge" [ref=e622]
+                      - generic [ref=e623]:
+                        - heading "₹267" [level=5] [ref=e624]
+                        - paragraph [ref=e625]: ₹333
+                        - generic [ref=e626]: 20% off
+                    - generic [ref=e629]:
+                      - generic [ref=e630]:
+                        - generic [ref=e631]: "4.1"
+                        - img "Star" [ref=e632]
+                      - generic [ref=e633]: 98923 Reviews
+              - link "Voguish Attractive Women Handbags +2 More Voguish Attractive Women Handbags ₹129 ₹134 4% off 4.4 Star 11862 Reviews" [ref=e635] [cursor=pointer]:
+                - /url: /handbag-for-women/p/d29zeq
+                - generic [ref=e636]:
+                  - generic [ref=e637]:
+                    - img "Voguish Attractive Women Handbags" [ref=e638]
+                    - generic [ref=e639]: +2 More
+                  - generic [ref=e641]:
+                    - generic [ref=e642]:
+                      - paragraph [ref=e644]: Voguish Attractive Women Handbags
+                      - generic [ref=e645]:
+                        - heading "₹129" [level=5] [ref=e646]
+                        - paragraph [ref=e647]: ₹134
+                        - generic [ref=e648]: 4% off
+                    - generic [ref=e651]:
+                      - generic [ref=e652]:
+                        - generic [ref=e653]: "4.4"
+                        - img "Star" [ref=e654]
+                      - generic [ref=e655]: 11862 Reviews
+              - 'link "Voguish Wall Decor & Hangings Offer clock icon 01h : 14m : 23s Voguish Wall Decor & Hangings ₹78 ₹88 11% off 4.3 Star 35657 Reviews" [ref=e657] [cursor=pointer]':
+                - /url: /prevalence-art-premium-premanand-ji-maharaj-wall-hanging-for-living-roombedroomspiritual-digital-reprint-painting-without-frame/p/8c5aiv
+                - generic [ref=e658]:
+                  - generic [ref=e659]:
+                    - img "Voguish Wall Decor & Hangings" [ref=e660]
+                    - generic [ref=e662]:
+                      - img "Offer clock icon" [ref=e663]
+                      - generic [ref=e664]: "01h : 14m : 23s"
+                  - generic [ref=e665]:
+                    - generic [ref=e666]:
+                      - paragraph [ref=e668]: Voguish Wall Decor & Hangings
+                      - generic [ref=e669]:
+                        - heading "₹78" [level=5] [ref=e670]
+                        - paragraph [ref=e671]: ₹88
+                        - generic [ref=e672]: 11% off
+                    - generic [ref=e675]:
+                      - generic [ref=e676]:
+                        - generic [ref=e677]: "4.3"
+                        - img "Star" [ref=e678]
+                      - generic [ref=e679]: 35657 Reviews
+              - link "ENVY Men & Women Perfume Combo Eau de Parfum 30ml Each Pack of 2 +1 More ENVY Men & Women Perfume Combo Eau de Parfum 30ml Each Pack of 2 mallBadge ₹210 ₹270 22% off 4.0 Star 334405 Reviews" [ref=e681] [cursor=pointer]:
+                - /url: /denver-caliber-honour-imperial-nano-travel-size-pack-deo-perfume-body-spray-for-men-50ml-x-3-long-lasting-deodorant/p/2wsdhl
+                - generic [ref=e682]:
+                  - generic [ref=e683]:
+                    - img "ENVY Men & Women Perfume Combo Eau de Parfum 30ml Each Pack of 2" [ref=e684]
+                    - generic [ref=e685]: +1 More
+                  - generic [ref=e687]:
+                    - generic [ref=e688]:
+                      - generic [ref=e689]:
+                        - paragraph [ref=e690]: ENVY Men & Women Perfume Combo Eau de Parfum 30ml Each Pack of 2
+                        - img "mallBadge" [ref=e691]
+                      - generic [ref=e692]:
+                        - heading "₹210" [level=5] [ref=e693]
+                        - paragraph [ref=e694]: ₹270
+                        - generic [ref=e695]: 22% off
+                    - generic [ref=e698]:
+                      - generic [ref=e699]:
+                        - generic [ref=e700]: "4.0"
+                        - img "Star" [ref=e701]
+                      - generic [ref=e702]: 334405 Reviews
+            - generic [ref=e703]:
+              - link "GHAR SOAPS MAGIC SOAP 300 GM GHAR SOAPS MAGIC SOAP 300 GM mallBadge ₹317 ₹525 40% off 4.2 Star 120114 Reviews" [ref=e705] [cursor=pointer]:
+                - /url: /ghar-soaps-magic-soap-300-gm/p/8dnyz4
+                - generic [ref=e706]:
+                  - img "GHAR SOAPS MAGIC SOAP 300 GM" [ref=e708]
+                  - generic [ref=e709]:
+                    - generic [ref=e710]:
+                      - generic [ref=e711]:
+                        - paragraph [ref=e712]: GHAR SOAPS MAGIC SOAP 300 GM
+                        - img "mallBadge" [ref=e713]
+                      - generic [ref=e714]:
+                        - heading "₹317" [level=5] [ref=e715]
+                        - paragraph [ref=e716]: ₹525
+                        - generic [ref=e717]: 40% off
+                    - generic [ref=e720]:
+                      - generic [ref=e721]:
+                        - generic [ref=e722]: "4.2"
+                        - img "Star" [ref=e723]
+                      - generic [ref=e724]: 120114 Reviews
+              - link "Men Popcorn Boxy Tshirts +5 More Men Popcorn Boxy Tshirts ₹259 3.9 Star 7049 Reviews" [ref=e726] [cursor=pointer]:
+                - /url: /winter-boxy-fit-t-shirt/p/hlvqvl
+                - generic [ref=e727]:
+                  - generic [ref=e728]:
+                    - img "Men Popcorn Boxy Tshirts" [ref=e729]
+                    - generic [ref=e730]: +5 More
+                  - generic [ref=e732]:
+                    - generic [ref=e733]:
+                      - paragraph [ref=e735]: Men Popcorn Boxy Tshirts
+                      - heading "₹259" [level=5] [ref=e737]
+                    - generic [ref=e740]:
+                      - generic [ref=e741]:
+                        - generic [ref=e742]: "3.9"
+                        - img "Star" [ref=e743]
+                      - generic [ref=e744]: 7049 Reviews
+              - link "Mamaearth Rice Face Wash 50 ml Pack of 2 Mamaearth Rice Face Wash 50 ml Pack of 2 mallBadge ₹226 ₹250 10% off 4.2 Star 204818 Reviews" [ref=e746] [cursor=pointer]:
+                - /url: /mamaearth-rice-face-wash-50-ml-pack-of-2/p/88muvd
+                - generic [ref=e747]:
+                  - img "Mamaearth Rice Face Wash 50 ml Pack of 2" [ref=e749]
+                  - generic [ref=e750]:
+                    - generic [ref=e751]:
+                      - generic [ref=e752]:
+                        - paragraph [ref=e753]: Mamaearth Rice Face Wash 50 ml Pack of 2
+                        - img "mallBadge" [ref=e754]
+                      - generic [ref=e755]:
+                        - heading "₹226" [level=5] [ref=e756]
+                        - paragraph [ref=e757]: ₹250
+                        - generic [ref=e758]: 10% off
+                    - generic [ref=e761]:
+                      - generic [ref=e762]:
+                        - generic [ref=e763]: "4.2"
+                        - img "Star" [ref=e764]
+                      - generic [ref=e765]: 204818 Reviews
+              - link "GHAR SOAPS MAGIC SOAP 100 GM GHAR SOAPS MAGIC SOAP 100 GM mallBadge ₹163 ₹210 22% off 4.0 Star 385119 Reviews" [ref=e767] [cursor=pointer]:
+                - /url: /ghar-soaps-magic-soap-with-saffron-and-sandalwood-tan-reducing-soap-for-all-skin-types-100-gm/p/5fm2ez
+                - generic [ref=e768]:
+                  - img "GHAR SOAPS MAGIC SOAP 100 GM" [ref=e770]
+                  - generic [ref=e771]:
+                    - generic [ref=e772]:
+                      - generic [ref=e773]:
+                        - paragraph [ref=e774]: GHAR SOAPS MAGIC SOAP 100 GM
+                        - img "mallBadge" [ref=e775]
+                      - generic [ref=e776]:
+                        - heading "₹163" [level=5] [ref=e777]
+                        - paragraph [ref=e778]: ₹210
+                        - generic [ref=e779]: 22% off
+                    - generic [ref=e782]:
+                      - generic [ref=e783]:
+                        - generic [ref=e784]: "4.0"
+                        - img "Star" [ref=e785]
+                      - generic [ref=e786]: 385119 Reviews
+            - generic [ref=e787]:
+              - link "GHAR SOAPS MAGIC SOAP 200 GM GHAR SOAPS MAGIC SOAP 200 GM mallBadge ₹252 ₹999 75% off 4.1 Star 96664 Reviews" [ref=e789] [cursor=pointer]:
+                - /url: /ghar-soaps-magic-soap-with-saffron-and-sandalwood-tan-reducing-soap-for-all-skin-types-200-gm/p/7mcjon
+                - generic [ref=e790]:
+                  - img "GHAR SOAPS MAGIC SOAP 200 GM" [ref=e792]
+                  - generic [ref=e793]:
+                    - generic [ref=e794]:
+                      - generic [ref=e795]:
+                        - paragraph [ref=e796]: GHAR SOAPS MAGIC SOAP 200 GM
+                        - img "mallBadge" [ref=e797]
+                      - generic [ref=e798]:
+                        - heading "₹252" [level=5] [ref=e799]
+                        - paragraph [ref=e800]: ₹999
+                        - generic [ref=e801]: 75% off
+                    - generic [ref=e804]:
+                      - generic [ref=e805]:
+                        - generic [ref=e806]: "4.1"
+                        - img "Star" [ref=e807]
+                      - generic [ref=e808]: 96664 Reviews
+              - 'link "Wildplay New Collections Of Unisex Perfumes Offer clock icon 01h : 14m : 23s Wildplay New Collections Of Unisex Perfumes mallBadge ₹135 ₹399 66% off 4.0 Star 33868 Reviews" [ref=e810] [cursor=pointer]':
+                - /url: /wildplay-chocolate-vanilla-30ml-unisex-perfume-sweet-gourmand-parfum-long-lasting-unisex-fragrance-with-rich-cocoa-notes-30ml-romantic-indulgent-scent/p/6atu9p
+                - generic [ref=e811]:
+                  - generic [ref=e812]:
+                    - img "Wildplay New Collections Of Unisex Perfumes" [ref=e813]
+                    - generic [ref=e815]:
+                      - img "Offer clock icon" [ref=e816]
+                      - generic [ref=e817]: "01h : 14m : 23s"
+                  - generic [ref=e818]:
+                    - generic [ref=e819]:
+                      - generic [ref=e820]:
+                        - paragraph [ref=e821]: Wildplay New Collections Of Unisex Perfumes
+                        - img "mallBadge" [ref=e822]
+                      - generic [ref=e823]:
+                        - heading "₹135" [level=5] [ref=e824]
+                        - paragraph [ref=e825]: ₹399
+                        - generic [ref=e826]: 66% off
+                    - generic [ref=e829]:
+                      - generic [ref=e830]:
+                        - generic [ref=e831]: "4.0"
+                        - img "Star" [ref=e832]
+                      - generic [ref=e833]: 33868 Reviews
+              - link "Parachute Advansed Aloe Vera Enriched Coconut Hair Oil GOLD | 5X Aloe Vera with Coconut Oil| Makes hair Sooperr soft | 400ml Parachute Advansed Aloe Vera Enriched Coconut Hair Oil GOLD | 5X Aloe Vera with Coconut Oil| Makes hair Sooperr soft | 400ml mallBadge ₹191 ₹375 49% off 4.3 Star 26951 Reviews" [ref=e835] [cursor=pointer]:
+                - /url: /parachute-advansed-aloe-vera-enriched-coconut-hair-oil-gold-5x-aloe-vera-with-coconut-oil-makes-hair-sooperr-soft-400ml/p/8w8g00
+                - generic [ref=e836]:
+                  - img "Parachute Advansed Aloe Vera Enriched Coconut Hair Oil GOLD | 5X Aloe Vera with Coconut Oil| Makes hair Sooperr soft | 400ml" [ref=e838]
+                  - generic [ref=e839]:
+                    - generic [ref=e840]:
+                      - generic [ref=e841]:
+                        - paragraph [ref=e842]: Parachute Advansed Aloe Vera Enriched Coconut Hair Oil GOLD | 5X Aloe Vera with Coconut Oil| Makes hair Sooperr soft | 400ml
+                        - img "mallBadge" [ref=e843]
+                      - generic [ref=e844]:
+                        - heading "₹191" [level=5] [ref=e845]
+                        - paragraph [ref=e846]: ₹375
+                        - generic [ref=e847]: 49% off
+                    - generic [ref=e850]:
+                      - generic [ref=e851]:
+                        - generic [ref=e852]: "4.3"
+                        - img "Star" [ref=e853]
+                      - generic [ref=e854]: 26951 Reviews
+              - link "Nat Habit New Facewash & Scrubs +2 More Nat Habit New Facewash & Scrubs mallBadge ₹274 ₹317 14% off 4.0 Star 26611 Reviews" [ref=e856] [cursor=pointer]:
+                - /url: /nat-habit-skin-brightening-for-women-men-de-tan-ubtan-100g/p/8w9dym
+                - generic [ref=e857]:
+                  - generic [ref=e858]:
+                    - img "Nat Habit New Facewash & Scrubs" [ref=e859]
+                    - generic [ref=e860]: +2 More
+                  - generic [ref=e862]:
+                    - generic [ref=e863]:
+                      - generic [ref=e864]:
+                        - paragraph [ref=e865]: Nat Habit New Facewash & Scrubs
+                        - img "mallBadge" [ref=e866]
+                      - generic [ref=e867]:
+                        - heading "₹274" [level=5] [ref=e868]
+                        - paragraph [ref=e869]: ₹317
+                        - generic [ref=e870]: 14% off
+                    - generic [ref=e873]:
+                      - generic [ref=e874]:
+                        - generic [ref=e875]: "4.0"
+                        - img "Star" [ref=e876]
+                      - generic [ref=e877]: 26611 Reviews
+    - generic [ref=e881]:
+      - generic [ref=e882] [cursor=pointer]: More About Meesho
+      - generic [ref=e888]:
+        - generic [ref=e889]:
+          - heading [level=2] [ref=e891]:
+            - strong [ref=e892]: Discover a World of Affordable Fashion & Everyday Essentials
+          - paragraph [ref=e894]: Upgrade your wardrobe and stock your home with the latest trends and essentials at prices designed for everyday value. Meesho offers a vast selection of products across all categories, ensuring you find everything you need at prices suited for everyday budgets.
+        - generic [ref=e895]:
+          - heading [level=3] [ref=e897]:
+            - strong [ref=e898]: Shop Millions of Products Across All Categories
+          - paragraph [ref=e900]: From trendy fashion finds to essential homeware, Meesho is your one-stop shop for everything you need. Explore millions of products across a wide variety of categories, ensuring you find the perfect item for any occasion.
+        - heading [level=2] [ref=e903]:
+          - strong [ref=e904]: Latest Women's Fashion Is Right Here
+        - generic [ref=e905]:
+          - heading [level=3] [ref=e907]:
+            - strong [ref=e908]: Western Wear for Women
+          - paragraph [ref=e910]: Are you looking to revamp your wardrobe with stylish and affordable pieces? Look no further than Meesho's extensive collection of women's western wear. Find trendy dresses, casual jeans, and comfortable tops suitable for any occasion. Our collection reflects current trends, with fresh styles added regularly , ensuring you stay on top of your fashion game. Browse our collection of funky jewelry and accessories to complete your look and express your unique style.
+        - generic [ref=e911]:
+          - heading [level=3] [ref=e913]:
+            - strong [ref=e914]: Accessories, Jewellery, and Footwear
+          - paragraph [ref=e916]: Elevate your outfit and add a touch of personality with Meesho's diverse range of accessories. Choose from a wide selection of jewelry sets, handbags, belts, and footwear to complement your style. Whether you're searching for statement earrings or comfortable sneakers, you’ll find a wide selection to suit your style.
+        - heading [level=2] [ref=e919]:
+          - strong [ref=e920]: Largest Collection of Menswear and Accessories
+        - generic [ref=e921]:
+          - heading [level=3] [ref=e923]:
+            - strong [ref=e924]: Men’s Western Wear
+          - paragraph [ref=e926]: Upgrade your casual or formal attire with Meesho's men's wear collection. We offer a vast selection of T-shirts, jeans, polos, coats, and shirts in all sizes. Our user-friendly search tool allows you to filter by size, color, and material, making it easy to find the perfect fit. Explore our collection of trendy accessories, including wallets, cufflinks, and bags, to add a touch of sophistication to your look.
+        - generic [ref=e927]:
+          - heading [level=3] [ref=e929]:
+            - strong [ref=e930]: Men's Ethnic Wear
+          - paragraph [ref=e932]: Need a new sherwani or any Indian Attire for an upcoming wedding function? Check out our latest men's ethnic wear collection, which has a range of budget-friendly styles to choose from, so you're sure to find something that fits your needs. Whether you're looking for a Sherwani set, Kurta pajamas or kurta, or an ethnic jacket, we've got it all!
+        - generic [ref=e933]:
+          - heading [level=3] [ref=e935]:
+            - strong [ref=e936]: Men’s Accessories and Footwear
+          - paragraph [ref=e938]: From men's accessories to the latest footwear collection, we have picked out something for you, your better half, or your brother! Shop our online collection of items like men's wallets, cufflinks, bags for men, belts, rings, and more. Remember to check out our latest footwear for men. From vibrant sneakers to formal office wear shoes to casual/ daily wear flip-flops, explore quality men’s products curated for every occasion. So don't waste another minute. Get yourself some accessories today!
+        - generic [ref=e939]:
+          - heading [level=3] [ref=e941]:
+            - strong [ref=e942]: Top Quality Beauty & Personal Care Products
+          - paragraph [ref=e944]: With thousands of different cosmetic brands and products, finding the right skincare, haircare & makeup products for you can be overwhelming. Our selection focuses on skincare and beauty products curated for comfort and care. From foundations and concealers to mascaras, eyeshadows, and lipsticks — you'll find all your makeup essentials in one place.
+        - generic [ref=e945]:
+          - heading [level=3] [ref=e947]:
+            - strong [ref=e948]: Baby Care & Kids Fashion Wear
+          - paragraph [ref=e950]:
+            - text: Parenthood calls for constant buying of new clothes for your kids! Whether you're looking for trendy baby clothes or just want affordable and trendy kidswear, Browse a variety of options for children of all ages, from everyday wear to festive styles. . You'll find everything from pink rompers and dresses for girls to sets and jeans for boys. Plus, we have ethnic wear and accessories for all ages of kids, from newborns to grown-ups. Click on
+            - link "baby care" [ref=e951] [cursor=pointer]:
+              - /url: https://www.meesho.com/baby-care/pl/3tj
+            - text: to shop for all your basic needs.
+        - heading [level=2] [ref=e954]:
+          - strong [ref=e955]: Shop Home Decor & Kitchen Products, Electronics, and Much More
+        - generic [ref=e956]:
+          - heading [level=3] [ref=e958]:
+            - strong [ref=e959]: Kitchen Products
+          - paragraph [ref=e961]:
+            - text: If you want to elevate your kitchen space, then you've come to the right place! Discover and browse a wide variety of quality home products, kitchen essentials like cooking utensils and serveware,
+            - link "kitchen storage" [ref=e962] [cursor=pointer]:
+              - /url: https://www.meesho.com/kitchen-storage/pl/3tn
+            - text: ", appliances like blenders, choppers, cooktops, and more! We are dedicated to providing our customers with the highest quality products at the most reasonable prices. Shop everything you need to spice up your kitchen and home! Happy shopping!"
+        - generic [ref=e963]:
+          - heading [level=3] [ref=e965]:
+            - strong [ref=e966]: Home Utility and Essentials
+          - paragraph [ref=e968]:
+            - text: Home styling is not just a trend but a necessity of the hour for every home - it keeps your surroundings freshand aesthetic. But of course, you only want to spend what you have to. Meesho offers a variety of home decor essentials across styles and budgets — from lamps and planters to
+            - link "curtains" [ref=e969] [cursor=pointer]:
+              - /url: https://www.meesho.com/curtains-sheers/pl/3jn
+            - text: and
+            - link "cushions" [ref=e970] [cursor=pointer]:
+              - /url: https://www.meesho.com/cushion-covers/pl/3k3
+            - text: . Our selection is regularly updated to reflect evolving design preferences
+        - generic [ref=e971]:
+          - heading [level=3] [ref=e973]:
+            - strong [ref=e974]: Electronics and Accessories
+          - paragraph [ref=e976]:
+            - text: At Meesho, you’ll find a variety of gadgets and accessories for your everyday
+            - link "electronic" [ref=e977] [cursor=pointer]:
+              - /url: https://www.meesho.com/appliances/pl/3to
+            - text: needs — including chargers, headphones, data cables, and power banks. Whether you’re looking for something functional or a thoughtful gift, our selection offers something for everyone.
+        - generic [ref=e978]:
+          - heading [level=3] [ref=e980]:
+            - strong [ref=e981]: Health, Fitness & Sports
+          - paragraph [ref=e983]: Health is wealth! We know how important it is for you to take care of your health and your family's fitness. To begin your healthcare journey, explore a range of fitness and wellness products suited for home workouts and everyday use. . You will find a wide variety of fitness equipment, health supplements, foods, nuts, and many more at very affordable prices. So what are you waiting for? Get started with your home workouts by shopping for dumbbell sets, exercise bands, exercise mats, skipping ropes, sports kits, and more!
+        - generic [ref=e984]:
+          - heading [level=3] [ref=e986]:
+            - strong [ref=e987]: Office Supplies and Stationery
+          - generic [ref=e988]:
+            - paragraph [ref=e989]: We have a wide range of stationery items which will help you stay tidy and organised. You can buy notebooks, diaries and notepads and craft supplies which are great for school and college, or you can buy office supplies which are great for adults. We have a variety of pens, pencils, and other stationery supplies to ensure that you have what you need to write down your thoughts, make lists and so much more.
+            - paragraph
+        - generic [ref=e990]:
+          - heading [level=2] [ref=e992]:
+            - strong [ref=e993]: Join the Meesho Community
+          - paragraph [ref=e995]: For a seamless online shopping experience, feel free to download the Meesho App. With millions of happy customers, we believe in growing our community. To give you a hassle-free online shopping experience, plenty of user-friendly features will make your shopping online easier than ever. Meesho offers multiple payment options, debit and credit cards, UPI, and COD, to help you with a smooth checkout process. Suppose you are unhappy or receive a damaged product. In that case, you can raise your concern with our expert team to immediately return them or get a full refund without questions. For any queries or concerns, send us an email at legalsupport@meesho.com. You can also contact us on social media through Facebook, Instagram, or Twitter. We're here to help you.
+        - heading [level=2] [ref=e998]:
+          - link "Download Meesho App Now" [ref=e999] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.meesho.supply&hl=en_IN&gl=US
+        - heading [level=2] [ref=e1002]:
+          - strong [ref=e1003]: More Than Just Shopping
+        - paragraph [ref=e1006]: Interested in selling online? Meesho enables individuals to start their selling journey with ease.
+        - generic [ref=e1007]:
+          - link "Online Shopping" [ref=e1008] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e1009]:
+            - generic [ref=e1010]: Baby
+            - generic [ref=e1012]:
+              - generic [ref=e1013]:
+                - link "Baby Blanket" [ref=e1014] [cursor=pointer]:
+                  - /url: /baby-blankets/pl/b9x
+                - text: "|"
+              - generic [ref=e1015]:
+                - link "Baby Hanging Cradle" [ref=e1016] [cursor=pointer]:
+                  - /url: /hanging-cradle/pl/9e4
+                - text: "|"
+              - generic [ref=e1017]:
+                - link "Baby Pillows" [ref=e1018] [cursor=pointer]:
+                  - /url: /baby-pillows/pl/ba6
+                - text: "|"
+              - generic [ref=e1019]:
+                - link "Baby Sleeping Bag" [ref=e1020] [cursor=pointer]:
+                  - /url: /cotton-baby-sleeping-bag/pl/7r6
+                - text: "|"
+              - link "Baby Towels" [ref=e1022] [cursor=pointer]:
+                - /url: /cotton-baby-towels/pl/72o
+          - generic [ref=e1023]:
+            - generic [ref=e1024]: Electronics & Accessories
+            - generic [ref=e1026]:
+              - generic [ref=e1027]:
+                - link "Android Smart Watches" [ref=e1028] [cursor=pointer]:
+                  - /url: /android-smart-watches/pl/6xe
+                - text: "|"
+              - generic [ref=e1029]:
+                - link "Bluetooth Earphones" [ref=e1030] [cursor=pointer]:
+                  - /url: /bluetooth-earphones/pl/8dc
+                - text: "|"
+              - generic [ref=e1031]:
+                - link "Bluetooth Speakers" [ref=e1032] [cursor=pointer]:
+                  - /url: /bluetooth-speakers/pl/8cr
+                - text: "|"
+              - generic [ref=e1033]:
+                - link "Car Mobile Holders" [ref=e1034] [cursor=pointer]:
+                  - /url: /car-mobile-holders/pl/9bf
+                - text: "|"
+              - generic [ref=e1035]:
+                - link "Car Mobile Holders" [ref=e1036] [cursor=pointer]:
+                  - /url: /car-mobile-chargers/pl/9bt
+                - text: "|"
+              - generic [ref=e1037]:
+                - link "CCTV Cameras" [ref=e1038] [cursor=pointer]:
+                  - /url: /wireless-cctv-cameras/pl/6xy
+                - text: "|"
+              - generic [ref=e1039]:
+                - link "Data Cables" [ref=e1040] [cursor=pointer]:
+                  - /url: /data-cables/pl/3sw
+                - text: "|"
+              - generic [ref=e1041]:
+                - link "Digital Photo Frames" [ref=e1042] [cursor=pointer]:
+                  - /url: /digital-photo-frame/pl/9cs
+                - text: "|"
+              - generic [ref=e1043]:
+                - link "Dongle" [ref=e1044] [cursor=pointer]:
+                  - /url: /usb-dongle/pl/6xt
+                - text: "|"
+              - generic [ref=e1045]:
+                - link "Earphones" [ref=e1046] [cursor=pointer]:
+                  - /url: /earphones/pl/3o7
+                - text: "|"
+              - generic [ref=e1047]:
+                - link "Fast Charging Power Banks" [ref=e1048] [cursor=pointer]:
+                  - /url: /fast-charging-power-banks/pl/7od
+                - text: "|"
+              - generic [ref=e1049]:
+                - link "Headphones" [ref=e1050] [cursor=pointer]:
+                  - /url: /headphones/pl/3o3
+                - text: "|"
+              - generic [ref=e1051]:
+                - link "Keyboard" [ref=e1052] [cursor=pointer]:
+                  - /url: /wireless-keyboard/pl/6xh
+                - text: "|"
+              - generic [ref=e1053]:
+                - link "Laptop Accessories" [ref=e1054] [cursor=pointer]:
+                  - /url: /laptop-accessories/pl/9j4
+                - text: "|"
+              - generic [ref=e1055]:
+                - link "Laptop Bags" [ref=e1056] [cursor=pointer]:
+                  - /url: /women-laptop-bags/pl/8f4
+                - text: "|"
+              - generic [ref=e1057]:
+                - link "Memory Cards" [ref=e1058] [cursor=pointer]:
+                  - /url: /memory-cards/pl/ayn
+                - text: "|"
+              - generic [ref=e1059]:
+                - link "Microphone" [ref=e1060] [cursor=pointer]:
+                  - /url: /bluetooth-microphone/pl/6xo
+                - text: "|"
+              - generic [ref=e1061]:
+                - link "Mobile Chargers" [ref=e1062] [cursor=pointer]:
+                  - /url: /mobile-chargers/pl/9r8
+                - text: "|"
+              - generic [ref=e1063]:
+                - link "Mouse" [ref=e1064] [cursor=pointer]:
+                  - /url: /laptop-mouse/pl/6xq
+                - text: "|"
+              - generic [ref=e1065]:
+                - link "On Ear Headphones" [ref=e1066] [cursor=pointer]:
+                  - /url: /on-ear-headphones/pl/8fl
+                - text: "|"
+              - generic [ref=e1067]:
+                - link "Pen Drives" [ref=e1068] [cursor=pointer]:
+                  - /url: /usb-pen-drives/pl/6ye
+                - text: "|"
+              - generic [ref=e1069]:
+                - link "Speakers" [ref=e1070] [cursor=pointer]:
+                  - /url: /speakers/pl/9ub
+                - text: "|"
+              - generic [ref=e1071]:
+                - link "Spy Cameras" [ref=e1072] [cursor=pointer]:
+                  - /url: /spy-cameras/pl/98o
+                - text: "|"
+              - generic [ref=e1073]:
+                - link "Sport Headphones" [ref=e1074] [cursor=pointer]:
+                  - /url: /sport-headphones/pl/8fh
+                - text: "|"
+              - generic [ref=e1075]:
+                - link "VR Box" [ref=e1076] [cursor=pointer]:
+                  - /url: /bluetooth-vr-box/pl/70t
+                - text: "|"
+              - link "Diwali Lightings" [ref=e1078] [cursor=pointer]:
+                - /url: /diwali-lightings/pl/3sz
+          - generic [ref=e1079]:
+            - generic [ref=e1080]: Home & Kitchen
+            - generic [ref=e1082]:
+              - generic [ref=e1083]:
+                - link "Aprons" [ref=e1084] [cursor=pointer]:
+                  - /url: /aprons-kitchen/pl/3sk
+                - text: "|"
+              - generic [ref=e1085]:
+                - link "Choppers" [ref=e1086] [cursor=pointer]:
+                  - /url: /choppers-peelers-kitchen/pl/3sd
+                - text: "|"
+              - generic [ref=e1087]:
+                - link "Chopping Boards" [ref=e1088] [cursor=pointer]:
+                  - /url: /chopping-boards/pl/a6q
+                - text: "|"
+              - generic [ref=e1089]:
+                - link "Cookers" [ref=e1090] [cursor=pointer]:
+                  - /url: /aluminium-pressure-cooker/pl/7w1
+                - text: "|"
+              - generic [ref=e1091]:
+                - link "Cutlery" [ref=e1092] [cursor=pointer]:
+                  - /url: /cutlery-and-flatware/pl/9to
+                - text: "|"
+              - generic [ref=e1093]:
+                - link "Food Processors" [ref=e1094] [cursor=pointer]:
+                  - /url: /food-processors/pl/a52
+                - text: "|"
+              - generic [ref=e1095]:
+                - link "Food Strainers" [ref=e1096] [cursor=pointer]:
+                  - /url: /stainless-steel-food-strainers/pl/778
+                - text: "|"
+              - generic [ref=e1097]:
+                - link "Funnels" [ref=e1098] [cursor=pointer]:
+                  - /url: /funnels/pl/a5o
+                - text: "|"
+              - generic [ref=e1099]:
+                - link "Graters" [ref=e1100] [cursor=pointer]:
+                  - /url: /grater-slicer/pl/esk
+                - text: "|"
+              - generic [ref=e1101]:
+                - link "Hand Blender" [ref=e1102] [cursor=pointer]:
+                  - /url: /plastic-hand-blender/pl/711
+                - text: "|"
+              - generic [ref=e1103]:
+                - link "Ice Cube Trays" [ref=e1104] [cursor=pointer]:
+                  - /url: /ice-cube-trays/pl/atl
+                - text: "|"
+              - generic [ref=e1105]:
+                - link "Ice Cream Scoops" [ref=e1106] [cursor=pointer]:
+                  - /url: /ice-cream-scoops/pl/avd
+                - text: "|"
+              - generic [ref=e1107]:
+                - link "Jars & Container" [ref=e1108] [cursor=pointer]:
+                  - /url: /jars-containers-kitchen/pl/3wo
+                - text: "|"
+              - generic [ref=e1109]:
+                - link "Juicer" [ref=e1110] [cursor=pointer]:
+                  - /url: /plastic-juicer/pl/6z8
+                - text: "|"
+              - generic [ref=e1111]:
+                - link "Kitchen Gloves" [ref=e1112] [cursor=pointer]:
+                  - /url: /silicone-oven-gloves/pl/7am
+                - text: "|"
+              - generic [ref=e1113]:
+                - link "Kitchen Mat" [ref=e1114] [cursor=pointer]:
+                  - /url: /kitchen-mat/pl/3t7
+                - text: "|"
+              - generic [ref=e1115]:
+                - link "Kitchen Scissors" [ref=e1116] [cursor=pointer]:
+                  - /url: /stainless-steel-kitchen-scissors/pl/78s
+                - text: "|"
+              - generic [ref=e1117]:
+                - link "Kitchen Towel" [ref=e1118] [cursor=pointer]:
+                  - /url: /paper-towel/pl/7gm
+                - text: "|"
+              - generic [ref=e1119]:
+                - link "Knives" [ref=e1120] [cursor=pointer]:
+                  - /url: /kitchen-knives/pl/3sj
+                - text: "|"
+              - generic [ref=e1121]:
+                - link "Lunch Boxes" [ref=e1122] [cursor=pointer]:
+                  - /url: /plastic-lunch-boxes/pl/79m
+                - text: "|"
+              - generic [ref=e1123]:
+                - link "Mashers" [ref=e1124] [cursor=pointer]:
+                  - /url: /whisks-mashers-pressers/pl/3t3
+                - text: "|"
+              - generic [ref=e1125]:
+                - link "Measuring Cups" [ref=e1126] [cursor=pointer]:
+                  - /url: /stainless-steel-measuring-cups/pl/79y
+                - text: "|"
+              - generic [ref=e1127]:
+                - link "Mixer Grinder" [ref=e1128] [cursor=pointer]:
+                  - /url: /mixer-juicer-grinders/pl/a6h
+                - text: "|"
+              - generic [ref=e1129]:
+                - link "Napkins Holder" [ref=e1130] [cursor=pointer]:
+                  - /url: /napkin-holders/pl/9g4
+                - text: "|"
+              - generic [ref=e1131]:
+                - link "Racks & Holders" [ref=e1132] [cursor=pointer]:
+                  - /url: /kitchen-racks-holders/pl/3nr
+                - text: "|"
+              - generic [ref=e1133]:
+                - link "Roti Maker" [ref=e1134] [cursor=pointer]:
+                  - /url: /roti-maker/pl/a4d
+                - text: "|"
+              - generic [ref=e1135]:
+                - link "Salt & Pepper Shakers" [ref=e1136] [cursor=pointer]:
+                  - /url: /stainless-steel-salt-pepper-shakers/pl/7dc
+                - text: "|"
+              - generic [ref=e1137]:
+                - link "Sandwich Maker" [ref=e1138] [cursor=pointer]:
+                  - /url: /sandwich-makers/pl/a4x
+                - text: "|"
+              - generic [ref=e1139]:
+                - link "Spice Racks" [ref=e1140] [cursor=pointer]:
+                  - /url: /wooden-spice-racks/pl/7fi
+                - text: "|"
+              - generic [ref=e1141]:
+                - link "Table Cover" [ref=e1142] [cursor=pointer]:
+                  - /url: /table-covers/pl/3ma
+                - text: "|"
+              - generic [ref=e1143]:
+                - link "Thermos & Flasks" [ref=e1144] [cursor=pointer]:
+                  - /url: /thermos/pl/9kg
+                - text: "|"
+              - generic [ref=e1145]:
+                - link "Toaster" [ref=e1146] [cursor=pointer]:
+                  - /url: /toaster/pl/a4p
+                - text: "|"
+              - generic [ref=e1147]:
+                - link "Tongs" [ref=e1148] [cursor=pointer]:
+                  - /url: /tongs/pl/axp
+                - text: "|"
+              - generic [ref=e1149]:
+                - link "Trivets" [ref=e1150] [cursor=pointer]:
+                  - /url: /trivets/pl/aao
+                - text: "|"
+              - link "Water Bottles" [ref=e1152] [cursor=pointer]:
+                - /url: /water-bottles/pl/3ns
+          - generic [ref=e1153]:
+            - generic [ref=e1154]: Home & Living
+            - generic [ref=e1156]:
+              - generic [ref=e1157]:
+                - link "Bean Bags" [ref=e1158] [cursor=pointer]:
+                  - /url: /bean-bags/pl/a3h
+                - text: "|"
+              - generic [ref=e1159]:
+                - link "Bedding Sets" [ref=e1160] [cursor=pointer]:
+                  - /url: /bedding-sets/pl/9eo
+                - text: "|"
+              - generic [ref=e1161]:
+                - link "Blankets" [ref=e1162] [cursor=pointer]:
+                  - /url: /blankets/pl/a46
+                - text: "|"
+              - generic [ref=e1163]:
+                - link "Coasters" [ref=e1164] [cursor=pointer]:
+                  - /url: /coasters/pl/5lq
+                - text: "|"
+              - generic [ref=e1165]:
+                - link "Cotton Bedsheets" [ref=e1166] [cursor=pointer]:
+                  - /url: /cotton-bedsheets/pl/744
+                - text: "|"
+              - generic [ref=e1167]:
+                - link "Cotton Towel" [ref=e1168] [cursor=pointer]:
+                  - /url: /cotton-towel/pl/7gp
+                - text: "|"
+              - generic [ref=e1169]:
+                - link "Cushions" [ref=e1170] [cursor=pointer]:
+                  - /url: /cushion/pl/ay8
+                - text: "|"
+              - generic [ref=e1171]:
+                - link "Curtains & Sheers" [ref=e1172] [cursor=pointer]:
+                  - /url: /curtains-sheers/pl/3jn
+                - text: "|"
+              - generic [ref=e1173]:
+                - link "Decorative Items" [ref=e1174] [cursor=pointer]:
+                  - /url: /home-decor/pl/3tl
+                - text: "|"
+              - generic [ref=e1175]:
+                - link "Duvet Covers" [ref=e1176] [cursor=pointer]:
+                  - /url: /duvet-covers/pl/410
+                - text: "|"
+              - generic [ref=e1177]:
+                - link "Face Towels" [ref=e1178] [cursor=pointer]:
+                  - /url: /face-towels/pl/abo
+                - text: "|"
+              - generic [ref=e1179]:
+                - link "Home Temple" [ref=e1180] [cursor=pointer]:
+                  - /url: /home-temple/pl/9fv
+                - text: "|"
+              - generic [ref=e1181]:
+                - link "Pillow Covers" [ref=e1182] [cursor=pointer]:
+                  - /url: /pillow-covers/pl/9g3
+                - text: "|"
+              - generic [ref=e1183]:
+                - link "Round Cushions" [ref=e1184] [cursor=pointer]:
+                  - /url: /round-cushion-pillows/pl/7vd
+                - text: "|"
+              - generic [ref=e1185]:
+                - link "Single Bed Sheet" [ref=e1186] [cursor=pointer]:
+                  - /url: /single-bed-sheet/pl/8cl
+                - text: "|"
+              - generic [ref=e1187]:
+                - link "Sofa Covers" [ref=e1188] [cursor=pointer]:
+                  - /url: /sofa-covers/pl/3rq
+                - text: "|"
+              - generic [ref=e1189]:
+                - link "Trays" [ref=e1190] [cursor=pointer]:
+                  - /url: /trays/pl/a6f
+                - text: "|"
+              - link "Yoga mats" [ref=e1192] [cursor=pointer]:
+                - /url: /yoga-mats/pl/9o7
+          - generic [ref=e1193]:
+            - generic [ref=e1194]: Kids
+            - generic [ref=e1196]:
+              - generic [ref=e1197]:
+                - link "Girls Stylish Tops" [ref=e1198] [cursor=pointer]:
+                  - /url: /girls-stylish-tops/pl/8ew
+                - text: "|"
+              - generic [ref=e1199]:
+                - link "Kids Blazers" [ref=e1200] [cursor=pointer]:
+                  - /url: /kids-blazer/pl/40y
+                - text: "|"
+              - generic [ref=e1201]:
+                - link "Kids Ethnic Gowns" [ref=e1202] [cursor=pointer]:
+                  - /url: /girls-gowns/pl/8e6
+                - text: "|"
+              - generic [ref=e1203]:
+                - link "Kids Ethnic Jackets" [ref=e1204] [cursor=pointer]:
+                  - /url: /kids-ethnic/pl/449
+                - text: "|"
+              - generic [ref=e1205]:
+                - link "Kids Kurtis & Kurtas" [ref=e1206] [cursor=pointer]:
+                  - /url: /girls-kurtis/pl/3yj
+                - text: "|"
+              - generic [ref=e1207]:
+                - link "Kids Lunch Boxes" [ref=e1208] [cursor=pointer]:
+                  - /url: /plastic-kids-lunch-boxes/pl/78n
+                - text: "|"
+              - generic [ref=e1209]:
+                - link "Kids Salwar Suit Sets" [ref=e1210] [cursor=pointer]:
+                  - /url: /girls-suits/pl/8f2
+                - text: "|"
+              - generic [ref=e1211]:
+                - link "Rompers" [ref=e1212] [cursor=pointer]:
+                  - /url: /rompers/pl/3l4
+                - text: "|"
+              - link "Tshirts Boys" [ref=e1214] [cursor=pointer]:
+                - /url: /tshirts-boys/pl/3nt
+          - generic [ref=e1215]:
+            - generic [ref=e1216]: Men Accessories
+            - generic [ref=e1218]:
+              - generic [ref=e1219]:
+                - link "Gold Jewellery Men" [ref=e1220] [cursor=pointer]:
+                  - /url: /gold-jewellery-men/pl/6kj
+                - text: "|"
+              - generic [ref=e1221]:
+                - link "Hair Spray For Men" [ref=e1222] [cursor=pointer]:
+                  - /url: /hair-spray-for-men/pl/9le
+                - text: "|"
+              - generic [ref=e1223]:
+                - link "Leather Watches Men" [ref=e1224] [cursor=pointer]:
+                  - /url: /leather-watches-men/pl/6k6
+                - text: "|"
+              - generic [ref=e1225]:
+                - link "Men Crossbody Bags" [ref=e1226] [cursor=pointer]:
+                  - /url: /cross-body-bags/pl/9ca
+                - text: "|"
+              - generic [ref=e1227]:
+                - link "Men Keychains" [ref=e1228] [cursor=pointer]:
+                  - /url: /keychains-men/pl/3ny
+                - text: "|"
+              - generic [ref=e1229]:
+                - link "Men Scarves" [ref=e1230] [cursor=pointer]:
+                  - /url: /mufflers-scarves-gloves/pl/3o2
+                - text: "|"
+              - generic [ref=e1231]:
+                - link "Men Shirt Studs" [ref=e1232] [cursor=pointer]:
+                  - /url: /shirt-studs/pl/9au
+                - text: "|"
+              - generic [ref=e1233]:
+                - link "Men Socks" [ref=e1234] [cursor=pointer]:
+                  - /url: /socks-men/pl/3nu
+                - text: "|"
+              - link "Men Wrist Bands" [ref=e1236] [cursor=pointer]:
+                - /url: /wristbands/pl/9fa
+          - generic [ref=e1237]:
+            - generic [ref=e1238]: Men Ethnicwear
+            - generic [ref=e1240]:
+              - generic [ref=e1241]:
+                - link "Men Dhoti Kurtas" [ref=e1242] [cursor=pointer]:
+                  - /url: /men-dhoti-kurtas/pl/3yf
+                - text: "|"
+              - generic [ref=e1243]:
+                - link "Men Dhotis" [ref=e1244] [cursor=pointer]:
+                  - /url: /dhotis-men/pl/3jp
+                - text: "|"
+              - generic [ref=e1245]:
+                - link "Men Indo Western Dresses" [ref=e1246] [cursor=pointer]:
+                  - /url: /men-indo-western-dresses/pl/3z4
+                - text: "|"
+              - link "Men Velvet Sherwanis" [ref=e1248] [cursor=pointer]:
+                - /url: /velvet-sherwanis-men/pl/7m5
+          - generic [ref=e1249]:
+            - generic [ref=e1250]: Men Footwear
+            - generic [ref=e1252]:
+              - generic [ref=e1253]:
+                - link "Leather Loafers Men" [ref=e1254] [cursor=pointer]:
+                  - /url: /leather-loafers-men/pl/6lp
+                - text: "|"
+              - generic [ref=e1255]:
+                - link "Men Sandals" [ref=e1256] [cursor=pointer]:
+                  - /url: /leather-sandals-men/pl/6jg
+                - text: "|"
+              - link "Reebok Sports Shoes Men" [ref=e1258] [cursor=pointer]:
+                - /url: /reebok-sports-shoes-men/pl/6p3
+          - generic [ref=e1259]:
+            - generic [ref=e1260]: Men Western Wear
+            - generic [ref=e1262]:
+              - generic [ref=e1263]:
+                - link "Cotton Shorts Men" [ref=e1264] [cursor=pointer]:
+                  - /url: /cotton-shorts-men/pl/6jm
+                - text: "|"
+              - generic [ref=e1265]:
+                - link "Denim Jeans Men" [ref=e1266] [cursor=pointer]:
+                  - /url: /men-denim-jeans/pl/89r
+                - text: "|"
+              - generic [ref=e1267]:
+                - link "Formal Shirts Men" [ref=e1268] [cursor=pointer]:
+                  - /url: /formal-shirts-men/pl/6jb
+                - text: "|"
+              - generic [ref=e1269]:
+                - link "Formal Trousers Men" [ref=e1270] [cursor=pointer]:
+                  - /url: /formal-trousers-men/pl/3rx
+                - text: "|"
+              - generic [ref=e1271]:
+                - link "Grey Blazers" [ref=e1272] [cursor=pointer]:
+                  - /url: /grey-blazers-men/pl/6n6
+                - text: "|"
+              - generic [ref=e1273]:
+                - link "Leather Jackets Men" [ref=e1274] [cursor=pointer]:
+                  - /url: /leather-jackets-men/pl/6ix
+                - text: "|"
+              - generic [ref=e1275]:
+                - link "Men Active Shorts" [ref=e1276] [cursor=pointer]:
+                  - /url: /black-active-shorts-men/pl/6vp
+                - text: "|"
+              - generic [ref=e1277]:
+                - link "Men Sweaters" [ref=e1278] [cursor=pointer]:
+                  - /url: /wool-sweaters-men/pl/6k5
+                - text: "|"
+              - generic [ref=e1279]:
+                - link "Men Trunks" [ref=e1280] [cursor=pointer]:
+                  - /url: /black-trunks-men/pl/6ng
+                - text: "|"
+              - generic [ref=e1281]:
+                - link "Printed Briefs Men" [ref=e1282] [cursor=pointer]:
+                  - /url: /printed-briefs-men/pl/7mq
+                - text: "|"
+              - generic [ref=e1283]:
+                - link "Printed Tshirts" [ref=e1284] [cursor=pointer]:
+                  - /url: /printed-tshirts-men/pl/6ka
+                - text: "|"
+              - generic [ref=e1285]:
+                - link "Sleeveless Sweatshirts Men" [ref=e1286] [cursor=pointer]:
+                  - /url: /sleeveless-sweatshirts-men/pl/6rn
+                - text: "|"
+              - generic [ref=e1287]:
+                - link "Sport Jackets Men" [ref=e1288] [cursor=pointer]:
+                  - /url: /sport-jackets-men/pl/7lc
+                - text: "|"
+              - generic [ref=e1289]:
+                - link "Sport Tracksuits Men" [ref=e1290] [cursor=pointer]:
+                  - /url: /sport-tracksuits-men/pl/7lg
+                - text: "|"
+              - generic [ref=e1291]:
+                - link "Vests" [ref=e1292] [cursor=pointer]:
+                  - /url: /vests-men/pl/3l0
+                - text: "|"
+              - link "Wool Jackets Men" [ref=e1294] [cursor=pointer]:
+                - /url: /wool-jackets-men/pl/6ke
+          - generic [ref=e1295]:
+            - generic [ref=e1296]: Personal Care & Wellness
+            - generic [ref=e1298]:
+              - generic [ref=e1299]:
+                - link "Bb Cream" [ref=e1300] [cursor=pointer]:
+                  - /url: /bb-cream/pl/3xf
+                - text: "|"
+              - generic [ref=e1301]:
+                - link "Beard Oil" [ref=e1302] [cursor=pointer]:
+                  - /url: /beard-oil/pl/3ww
+                - text: "|"
+              - generic [ref=e1303]:
+                - link "Body Scrub" [ref=e1304] [cursor=pointer]:
+                  - /url: /body-scrub/pl/3xk
+                - text: "|"
+              - generic [ref=e1305]:
+                - link "Compact" [ref=e1306] [cursor=pointer]:
+                  - /url: /compact-powder/pl/kjb2c
+                - text: "|"
+              - generic [ref=e1307]:
+                - link "Deodorants" [ref=e1308] [cursor=pointer]:
+                  - /url: /deodrants/pl/3kt
+                - text: "|"
+              - generic [ref=e1309]:
+                - link "Eye Lenses" [ref=e1310] [cursor=pointer]:
+                  - /url: /eye-lenses/pl/9jx
+                - text: "|"
+              - generic [ref=e1311]:
+                - link "Face Steamers" [ref=e1312] [cursor=pointer]:
+                  - /url: /face-steamers/pl/9mv
+                - text: "|"
+              - generic [ref=e1313]:
+                - link "Hair Care" [ref=e1314] [cursor=pointer]:
+                  - /url: /hair-care-products/pl/3kb
+                - text: "|"
+              - generic [ref=e1315]:
+                - link "Hair Color" [ref=e1316] [cursor=pointer]:
+                  - /url: /hair-color/pl/9lt
+                - text: "|"
+              - generic [ref=e1317]:
+                - link "Hair Steamers" [ref=e1318] [cursor=pointer]:
+                  - /url: /hair-steamers/pl/9jb
+                - text: "|"
+              - generic [ref=e1319]:
+                - link "Lip Balm" [ref=e1320] [cursor=pointer]:
+                  - /url: /lip-balm/pl/3x6
+                - text: "|"
+              - generic [ref=e1321]:
+                - link "Makeup Kits" [ref=e1322] [cursor=pointer]:
+                  - /url: /makeup-kit/pl/3pd
+                - text: "|"
+              - generic [ref=e1323]:
+                - link "Nail Cutter" [ref=e1324] [cursor=pointer]:
+                  - /url: /nail-cutter/pl/9mh
+                - text: "|"
+              - generic [ref=e1325]:
+                - link "Oximeter" [ref=e1326] [cursor=pointer]:
+                  - /url: /oximeter/pl/9ne
+                - text: "|"
+              - generic [ref=e1327]:
+                - link "Olive Oils" [ref=e1328] [cursor=pointer]:
+                  - /url: /olive-oils/pl/95i
+                - text: "|"
+              - generic [ref=e1329]:
+                - link "Oral Care" [ref=e1330] [cursor=pointer]:
+                  - /url: /oral-care/pl/3tf
+                - text: "|"
+              - generic [ref=e1331]:
+                - link "Soap" [ref=e1332] [cursor=pointer]:
+                  - /url: /body-soap/pl/3xz
+                - text: "|"
+              - generic [ref=e1333]:
+                - link "Talcum Powder" [ref=e1334] [cursor=pointer]:
+                  - /url: /talcum-powder/pl/3xl
+                - text: "|"
+              - link "Tummy trimmer" [ref=e1336] [cursor=pointer]:
+                - /url: /tummy-trimmers/pl/9fo
+          - generic [ref=e1337]:
+            - generic [ref=e1338]: Women Accessories
+            - generic [ref=e1340]:
+              - generic [ref=e1341]:
+                - link "Ankle Socks Women" [ref=e1342] [cursor=pointer]:
+                  - /url: /ankle-socks-women/pl/80v
+                - text: "|"
+              - generic [ref=e1343]:
+                - link "Bindis" [ref=e1344] [cursor=pointer]:
+                  - /url: /red-bindis/pl/69v
+                - text: "|"
+              - generic [ref=e1345]:
+                - link "Briefcases" [ref=e1346] [cursor=pointer]:
+                  - /url: /briefcases/pl/9cd
+                - text: "|"
+              - generic [ref=e1347]:
+                - link "Bridal Anklets" [ref=e1348] [cursor=pointer]:
+                  - /url: /bridal-anklets/pl/8cm
+                - text: "|"
+              - generic [ref=e1349]:
+                - link "Cateye Sunglasses" [ref=e1350] [cursor=pointer]:
+                  - /url: /cateye-sunglasses/pl/5kx
+                - text: "|"
+              - generic [ref=e1351]:
+                - link "Chandbali Earrings" [ref=e1352] [cursor=pointer]:
+                  - /url: /chandbali-earrings/pl/3va
+                - text: "|"
+              - generic [ref=e1353]:
+                - link "Clutches" [ref=e1354] [cursor=pointer]:
+                  - /url: /clutches-bags-women/pl/3nd
+                - text: "|"
+              - generic [ref=e1355]:
+                - link "Hair Accessories" [ref=e1356] [cursor=pointer]:
+                  - /url: /hair-accessories-women/pl/3jl
+                - text: "|"
+              - generic [ref=e1357]:
+                - link "Handbags" [ref=e1358] [cursor=pointer]:
+                  - /url: /handbags-women/pl/3k2
+                - text: "|"
+              - generic [ref=e1359]:
+                - link "Hijabs" [ref=e1360] [cursor=pointer]:
+                  - /url: /hijab/pl/3z3
+                - text: "|"
+              - generic [ref=e1361]:
+                - link "Hoop Earrings" [ref=e1362] [cursor=pointer]:
+                  - /url: /hoop-earrings/pl/3rh
+                - text: "|"
+              - generic [ref=e1363]:
+                - link "Jewellery Set" [ref=e1364] [cursor=pointer]:
+                  - /url: /jewellery-sets-women/pl/3jy
+                - text: "|"
+              - generic [ref=e1365]:
+                - link "Maangtika" [ref=e1366] [cursor=pointer]:
+                  - /url: /maangtikka/pl/3pf
+                - text: "|"
+              - generic [ref=e1367]:
+                - link "Multi Necklace" [ref=e1368] [cursor=pointer]:
+                  - /url: /multi-necklace/pl/455
+                - text: "|"
+              - generic [ref=e1369]:
+                - link "Nosepins" [ref=e1370] [cursor=pointer]:
+                  - /url: /nose-pins/pl/3ll
+                - text: "|"
+              - generic [ref=e1371]:
+                - link "Oxidised Ring" [ref=e1372] [cursor=pointer]:
+                  - /url: /oxidised-ring/pl/454
+                - text: "|"
+              - generic [ref=e1373]:
+                - link "Pashmina Shawls" [ref=e1374] [cursor=pointer]:
+                  - /url: /pashmina-shawls/pl/650
+                - text: "|"
+              - generic [ref=e1375]:
+                - link "Potlis" [ref=e1376] [cursor=pointer]:
+                  - /url: /potli-bags-women/pl/3ms
+                - text: "|"
+              - generic [ref=e1377]:
+                - link "Pouches" [ref=e1378] [cursor=pointer]:
+                  - /url: /pouches/pl/9jr
+                - text: "|"
+              - generic [ref=e1379]:
+                - link "Rucksacks" [ref=e1380] [cursor=pointer]:
+                  - /url: /rucksacks/pl/9jd
+                - text: "|"
+              - generic [ref=e1381]:
+                - link "Small Travel Bags" [ref=e1382] [cursor=pointer]:
+                  - /url: /small-travel-bags/pl/9cb
+                - text: "|"
+              - generic [ref=e1383]:
+                - link "Stud Earrings Women" [ref=e1384] [cursor=pointer]:
+                  - /url: /stud-earrings-women/pl/3n9
+                - text: "|"
+              - generic [ref=e1385]:
+                - link "Trolley Bags" [ref=e1386] [cursor=pointer]:
+                  - /url: /trolley-bags/pl/9jh
+                - text: "|"
+              - generic [ref=e1387]:
+                - link "Umbrellas" [ref=e1388] [cursor=pointer]:
+                  - /url: /umbrellas/pl/3og
+                - text: "|"
+              - link "Waist Bags" [ref=e1390] [cursor=pointer]:
+                - /url: /waist-bags/pl/9cj
+          - generic [ref=e1391]:
+            - generic [ref=e1392]: Women Ethnicwear
+            - generic [ref=e1394]:
+              - generic [ref=e1395]:
+                - link "Abaya" [ref=e1396] [cursor=pointer]:
+                  - /url: /abaya/pl/3yr
+                - text: "|"
+              - generic [ref=e1397]:
+                - link "Black Kurta" [ref=e1398] [cursor=pointer]:
+                  - /url: /black-kurta-women/pl/88g
+                - text: "|"
+              - generic [ref=e1399]:
+                - link "Blouse Piece" [ref=e1400] [cursor=pointer]:
+                  - /url: /unstitched-blouse-piece/pl/51k
+                - text: "|"
+              - generic [ref=e1401]:
+                - link "Chikankari Kurtis" [ref=e1402] [cursor=pointer]:
+                  - /url: /chikankari-women-kurtis/pl/3pn
+                - text: "|"
+              - generic [ref=e1403]:
+                - link "Designer Lehenga" [ref=e1404] [cursor=pointer]:
+                  - /url: /designer-lehenga/pl/8cp
+                - text: "|"
+              - generic [ref=e1405]:
+                - link "Designer Suits" [ref=e1406] [cursor=pointer]:
+                  - /url: /designer-suits/pl/8cs
+                - text: "|"
+              - generic [ref=e1407]:
+                - link "Kurti Fabric" [ref=e1408] [cursor=pointer]:
+                  - /url: /unstitched-kurti-fabric/pl/65x
+                - text: "|"
+              - generic [ref=e1409]:
+                - link "Petticoats" [ref=e1410] [cursor=pointer]:
+                  - /url: /petticoats/pl/3ui
+                - text: "|"
+              - generic [ref=e1411]:
+                - link "Phulkari Dupatta" [ref=e1412] [cursor=pointer]:
+                  - /url: /phulkari-dupatta/pl/4by
+                - text: "|"
+              - generic [ref=e1413]:
+                - link "Puff Sleeve Blouses" [ref=e1414] [cursor=pointer]:
+                  - /url: /puff-sleeve-blouses/pl/3zc
+                - text: "|"
+              - generic [ref=e1415]:
+                - link "Sharara" [ref=e1416] [cursor=pointer]:
+                  - /url: /sharara-kurta-set/pl/4ub
+                - text: "|"
+              - generic [ref=e1417]:
+                - link "Silk Saree" [ref=e1418] [cursor=pointer]:
+                  - /url: /silk-sarees/pl/3j4
+                - text: "|"
+              - link "Velvet Shawls" [ref=e1420] [cursor=pointer]:
+                - /url: /velvet-shawls/pl/7ji
+          - generic [ref=e1421]:
+            - generic [ref=e1422]: Women Footwear
+            - generic [ref=e1424]:
+              - generic [ref=e1425]:
+                - link "Bellies" [ref=e1426] [cursor=pointer]:
+                  - /url: /bellies/pl/3n8
+                - text: "|"
+              - generic [ref=e1427]:
+                - link "Juttis & Mojaris" [ref=e1428] [cursor=pointer]:
+                  - /url: /juttis-and-mojaris/pl/9hm
+                - text: "|"
+              - link "Women Slippers" [ref=e1430] [cursor=pointer]:
+                - /url: /slippers-women/pl/3k6
+          - generic [ref=e1431]:
+            - generic [ref=e1432]: Women Western Wear
+            - generic [ref=e1434]:
+              - generic [ref=e1435]:
+                - link "Ankle Length Leggings" [ref=e1436] [cursor=pointer]:
+                  - /url: /ankle-length-leggings/pl/8cz
+                - text: "|"
+              - generic [ref=e1437]:
+                - link "Black Camisoles" [ref=e1438] [cursor=pointer]:
+                  - /url: /black-camisoles/pl/54k
+                - text: "|"
+              - generic [ref=e1439]:
+                - link "Black Jeggings" [ref=e1440] [cursor=pointer]:
+                  - /url: /black-jeggings/pl/54h
+                - text: "|"
+              - generic [ref=e1441]:
+                - link "Body shapers" [ref=e1442] [cursor=pointer]:
+                  - /url: /body-shapers/pl/9nx
+                - text: "|"
+              - generic [ref=e1443]:
+                - link "Capris" [ref=e1444] [cursor=pointer]:
+                  - /url: /capris-women/pl/3sv
+                - text: "|"
+              - generic [ref=e1445]:
+                - link "Chikankari Palazzos" [ref=e1446] [cursor=pointer]:
+                  - /url: /chikankari-palazzos/pl/3nh
+                - text: "|"
+              - generic [ref=e1447]:
+                - link "Cotton Bathrobes" [ref=e1448] [cursor=pointer]:
+                  - /url: /cotton-bathrobes/pl/56j
+                - text: "|"
+              - generic [ref=e1449]:
+                - link "Denim Women Shorts" [ref=e1450] [cursor=pointer]:
+                  - /url: /denim-women-shorts/pl/5pn
+                - text: "|"
+              - generic [ref=e1451]:
+                - link "Designer Gown" [ref=e1452] [cursor=pointer]:
+                  - /url: /designer-gown/pl/8e0
+                - text: "|"
+              - generic [ref=e1453]:
+                - link "Fancy Ladies Sweater" [ref=e1454] [cursor=pointer]:
+                  - /url: /fancy-ladies-sweater/pl/7yl
+                - text: "|"
+              - generic [ref=e1455]:
+                - link "Flared Jeans" [ref=e1456] [cursor=pointer]:
+                  - /url: /flared-jeans/pl/58d
+                - text: "|"
+              - generic [ref=e1457]:
+                - link "Jacket Dresses" [ref=e1458] [cursor=pointer]:
+                  - /url: /jacket-dresses/pl/5ys
+                - text: "|"
+              - generic [ref=e1459]:
+                - link "Kaftans" [ref=e1460] [cursor=pointer]:
+                  - /url: /kaftan-dresses/pl/5a6
+                - text: "|"
+              - generic [ref=e1461]:
+                - link "Lace Lingerie Sets" [ref=e1462] [cursor=pointer]:
+                  - /url: /lace-lingerie-sets/pl/5ah
+                - text: "|"
+              - generic [ref=e1463]:
+                - link "Lingerie Sets" [ref=e1464] [cursor=pointer]:
+                  - /url: /lingerie-women/pl/3vn
+                - text: "|"
+              - generic [ref=e1465]:
+                - link "Long Tops Women" [ref=e1466] [cursor=pointer]:
+                  - /url: /long-tops-women/pl/3u8
+                - text: "|"
+              - generic [ref=e1467]:
+                - link "Maternity Wear" [ref=e1468] [cursor=pointer]:
+                  - /url: /maternity-wear/pl/3so
+                - text: "|"
+              - generic [ref=e1469]:
+                - link "Pencil Skirts" [ref=e1470] [cursor=pointer]:
+                  - /url: /pencil-skirts/pl/5eq
+                - text: "|"
+              - generic [ref=e1471]:
+                - link "Phulkari Dupatta" [ref=e1472] [cursor=pointer]:
+                  - /url: /phulkari-dupatta/pl/4by
+                - text: "|"
+              - generic [ref=e1473]:
+                - link "Petticoats" [ref=e1474] [cursor=pointer]:
+                  - /url: /petticoats/pl/3ui
+                - text: "|"
+              - generic [ref=e1475]:
+                - link "Printed Leggings" [ref=e1476] [cursor=pointer]:
+                  - /url: /printed-leggings/pl/5fu
+                - text: "|"
+              - generic [ref=e1477]:
+                - link "Push Up Bra" [ref=e1478] [cursor=pointer]:
+                  - /url: /push-up-bra/pl/5g8
+                - text: "|"
+              - generic [ref=e1479]:
+                - link "Short Night Dress" [ref=e1480] [cursor=pointer]:
+                  - /url: /short-night-dress/pl/84r
+                - text: "|"
+              - generic [ref=e1481]:
+                - link "Shrugs" [ref=e1482] [cursor=pointer]:
+                  - /url: /shrugs-capes-ponchos/pl/3si
+                - text: "|"
+              - generic [ref=e1483]:
+                - link "Satin Night Suit" [ref=e1484] [cursor=pointer]:
+                  - /url: /satin-night-suit/pl/84q
+                - text: "|"
+              - generic [ref=e1485]:
+                - link "Swimwear" [ref=e1486] [cursor=pointer]:
+                  - /url: /swimming-costumes/pl/99u
+                - text: "|"
+              - generic [ref=e1487]:
+                - link "Tights" [ref=e1488] [cursor=pointer]:
+                  - /url: /tights-shapewear/pl/61y
+                - text: "|"
+              - generic [ref=e1489]:
+                - link "Tshirt Dresses" [ref=e1490] [cursor=pointer]:
+                  - /url: /tshirt-dresses/pl/5uk
+                - text: "|"
+              - generic [ref=e1491]:
+                - link "Women Frocks" [ref=e1492] [cursor=pointer]:
+                  - /url: /women-frocks/pl/8ez
+                - text: "|"
+              - generic [ref=e1493]:
+                - link "Women Jackets" [ref=e1494] [cursor=pointer]:
+                  - /url: /woolen-jacket-women/pl/89t
+                - text: "|"
+              - generic [ref=e1495]:
+                - link "Women Night Suits" [ref=e1496] [cursor=pointer]:
+                  - /url: /night-suits-women/pl/3jw
+                - text: "|"
+              - generic [ref=e1497]:
+                - link "Women Pyjamas" [ref=e1498] [cursor=pointer]:
+                  - /url: /cotton-women-pyjamas/pl/5pk
+                - text: "|"
+              - generic [ref=e1499]:
+                - link "Women Slippers" [ref=e1500] [cursor=pointer]:
+                  - /url: /slippers-women/pl/3k6
+                - text: "|"
+              - generic [ref=e1501]:
+                - link "Women Sweatshirts" [ref=e1502] [cursor=pointer]:
+                  - /url: /sweatshirts-women/pl/3sl
+                - text: "|"
+              - generic [ref=e1503]:
+                - link "Women Thermal Set" [ref=e1504] [cursor=pointer]:
+                  - /url: /thermal-sets/pl/970
+                - text: "|"
+              - link "Women Trousers" [ref=e1506] [cursor=pointer]:
+                - /url: /trousers-women/pl/3no
+  - alert [ref=e1507]
+```
+
+# Test source
+
+```ts
+  1  | // @ts-check
+  2  | import { test, expect } from '@playwright/test';
+  3  | 
+  4  | test('has title', async ({ page }) => {
+  5  |   await page.goto('https://playwright.dev/');
+  6  | 
+  7  |   // Expect a title "to contain" a substring.
+  8  |   await expect(page).toHaveTitle(/Playwright/);
+  9  | });
+  10 | 
+  11 | test('get started link', async ({ page }) => {
+  12 |   await page.goto('https://playwright.dev/');
+  13 | 
+  14 |   // Click the get started link.
+  15 |   await page.getByRole('link', { name: 'Get started' }).click();
+  16 | 
+  17 |   // Expects page to have a heading with the name of Installation.
+  18 |   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  19 | });
+  20 | test('meesho', async ({ page }) => {
+> 21 |   await page.goto('https://meesho.com')
+     |              ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  22 | })
+  23 | 
+```
